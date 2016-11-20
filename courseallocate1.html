@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>COURSES ASSIGN DETAILS</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<center>
+<h1>COURSE ASSIGN DETAILS</h1>
+<div id="login-form">
+<form method="post" action="trainercourseallocate.php">
+<table align="center" width="30%" border="0">
+<tr>
+<td><input type="text" name="traineeno" placeholder="traineeno" required /></td>
+</tr>
+<tr>
+<td><input type="text" name="traineename" placeholder="traineename" required /></td>
+</tr>
+<tr>
+<td><select name="courseno[]" multiple="multiple">
+ <option>511</option>
+ <option>512</option>
+ <option>513</option>
+ <option>514</option>
+ <option>515</option>
+ <option>516</option>
+ <option>517</option>
+ <option>518</option>
+ <option>519</option>
+ <option>520</option>
+ <option>521</option>
+ <option>522</option>
+ </select></td>
+</tr>
+<tr>
+<td><select name="coursetitle[]" multiple="multiple">
+ <option>cloud computing</option>
+ <option>big data</option>
+ <option>ccna</option>
+ <option>oracle OCA</option>
+ <option>IBM business analytics</option>
+ <option>red hat linux</option>
+ <option>MCSE</option>
+ <option>oracle PL/SQL</option>
+ <option>VCP</option>
+ <option>VCA-DT</option>
+ <option>LPIC-3</option>
+ 
+ </select></td>
+</tr>
+<tr>
+<td><input type="text" name="trainername" placeholder="trainername" required /></td>
+</tr>
+<tr>
+<td><input type="text" name="coursestart" placeholder="coursestart" required /></td>
+</tr>
+<tr>
+<td><input type="text" name="coursefinish" placeholder="coursefinish" required /></td>
+</tr>
+<tr>
+<td><button type="submit" name="btn-addnew">Assign</button>
+<button type="reset" name="clear">Clear</button></td>
+</tr>
+</table>
+</form>
+</div>
+</center>
+</body>
+</html>
