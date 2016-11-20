@@ -1,0 +1,76 @@
+ <html>
+ <head>
+ <title>TRAINING BASED HUMAN CAPITAL INFORMATION SYSTEM</title>
+ </head>
+ <body>
+<style>
+#header {
+    background-color:black;
+    color:yellow;
+    text-align:center;
+    padding:5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+<frameset rows="25%,*">
+<frame src="std.jpg">
+</frameset>
+</style>
+</head>
+</body>
+
+<body>
+<?php
+session_start();?>
+<ul>
+  <li><a class="active" href="#">GLOYSYS</a></li>
+  
+  <li><a href="logintrain1.php" target="img">ADMIN</a></li>
+  <?php 
+  
+    if($_SESSION['logged']==true){ 
+	echo'Welcome&nbsp';
+        echo $_SESSION['username'];
+        }
+    elseif($_SESSION['logged']==false) {
+        echo '<a href="userlogin.html"target="home"><span>trainee</span></a></li>';
+    }
+?>
+  <li><a href="trainerlogin.html" target="home">TRAINER</a></li>
+  <ul style="float:right;list-style-type:none;">
+	<li><a href="about.html">ABOUT</a></li>
+  </ul>
+</ul>
+<form>
+<div id="header">
+<h1><b><center> GLOSYS HUMAN CAPITAL INFORMATION SYSTEM </b></center></h1>
+</div >
+
+</form>
+</body>
+</html>
+ 
